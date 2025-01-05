@@ -136,9 +136,10 @@ export default function Home() {
   
         </div>
         </section>
-        <section>
-        <h3 className="text-lime-400 text-3xl font-md  text-center">A  Community of Vibrant AI/ML Engineers<br/>
+        <section className="flex flex-col justify-center items-start">
+        <h3 className="text-lime-400 text-4xl font-semibold ">A  Community of Vibrant AI/ML Engineers<br/>
           <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
+          <p></p>
         </h3>
           </section>
   </main>
