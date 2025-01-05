@@ -41,7 +41,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="p-4 mt-48 md:mt-0 md:px-24 flex flex-col justify-center items-center gap-48">
+    <main className="p-4 mt-10 md:mt-0 md:px-24 flex flex-col justify-center items-center gap-48">
     {/* Hero Section */}
     <motion.section
       className="h-screen w-full flex flex-col justify-center items-center gap-4"
