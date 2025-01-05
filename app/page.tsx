@@ -94,7 +94,7 @@ export default function Home() {
       <div className="md:w-1/2 space-y-5">
         <h3 className="text-white text-3xl font-md">Collaboration at the core of AI/ML innovation</h3>
         <p className="text-md text-gray-300 leading-normal">
-          AI Collective Hub brings together individuals passionate about artificial intelligence and machine learning. We provide the resources, connections, and support needed to innovate, grow, and thrive. Whether you're new to AI or an experienced engineer, we’re here to help you create meaningful solutions and achieve your goals.
+          AI Collective Hub brings together individuals passionate about artificial intelligence and machine learning. We provide the resources, connections, and support needed to innovate, grow, and thrive. Whether you&apos;re new to AI or an experienced engineer, we’re here to help you create meaningful solutions and achieve your goals.
         </p>
         <ul className="flex flex-col gap-2">
           <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
@@ -209,7 +209,7 @@ export default function Home() {
        
           </section>
           <section className="flex flex-col justify-center items-center gap-10" id="partner">
-          <h3 className="text-lime-400 text-3xl font-md  text-center">Let's Build Something Great Together <br/>
+          <h3 className="text-lime-400 text-3xl font-md  text-center">Let&apos;s Build Something Great Together <br/>
           <span className="text-gray-400"> {`{ Partner with Us to Create Impactful Solutions }`}</span>
         </h3>
 
