@@ -2,12 +2,15 @@
 import {motion} from "framer-motion"
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Card from "./components/ui/Card";
 import EventCard from "./components/ui/EventCard";
 import LogoCarousel from "./components/ui/LogoCarousel";
 import PartnershipForm from "./components/ui/PartnershipForm";
 import TeamCard from "./components/ui/TeamCard";
 export default function Home() {
+  const currentYear = new Date().getFullYear();
+
   const opportunities = [
     {
       id: 1,
@@ -38,7 +41,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="p-4 md:px-24 flex flex-col justify-center items-center gap-48">
+    <main className="p-4 mt-48 md:mt-0 md:px-24 flex flex-col justify-center items-center gap-48">
     {/* Hero Section */}
     <motion.section
       className="h-screen w-full flex flex-col justify-center items-center gap-4"
@@ -47,7 +50,7 @@ export default function Home() {
       transition={{ duration: 1 }}
       whileHover={{ scale: 1.05 }}
     >
-      <h1 className="text-center text-white text-5xl leading-normal font-bold">
+      <h1 className="text-center text-white text-3xl md:text-5xl leading-normal font-bold">
         Empowering <span className="text-lime-400">AI/ML </span> Innovators Through Collaboration <span className="text-lime-400"> & </span>Community
       </h1>
       <p className="text-md text-white text-center w-4/5">
@@ -86,8 +89,9 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.5 }}
       whileHover={{ scale: 1.03 }}
+      id="about"
     >
-      <div className="w-1/2 space-y-5">
+      <div className="md:w-1/2 space-y-5">
         <h3 className="text-white text-3xl font-md">Collaboration at the core of AI/ML innovation</h3>
         <p className="text-md text-gray-300 leading-normal">
           AI Collective Hub brings together individuals passionate about artificial intelligence and machine learning. We provide the resources, connections, and support needed to innovate, grow, and thrive. Whether you're new to AI or an experienced engineer, we’re here to help you create meaningful solutions and achieve your goals.
@@ -107,7 +111,7 @@ export default function Home() {
           </motion.li>
         </ul>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <Image src="/bg-main.jpg" alt="AI Community" width={500} height={500} className="rounded-lg" />
       </div>
     </motion.section>
@@ -119,6 +123,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1 }}
       whileHover={{ scale: 1.03 }}
+      id="benefits"
     >
       <h3 className="text-lime-400 text-3xl font-md text-center">
         Fuel Your AI/ML Engineering Journey <br />
@@ -134,7 +139,7 @@ export default function Home() {
       </div>
     </motion.section>
 
-      <section className="py-12 px-10 bg-gray-600/30 text-white rounded-lg">
+      <section className="py-12 md:px-10 bg-gray-600/30 text-white rounded-lg">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">
           Unlock Pathways to AI/ML Excellence
@@ -169,31 +174,31 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <section className="flex flex-col justify-center items-center gap-10">
+    <section className="flex flex-col justify-center items-center gap-10" id="events">
         <h3 className="text-lime-400 text-3xl font-md  text-center">Events & Workshops <br/>
           <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
         </h3>
        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
-      {cards.map((card, index) => (
+      {/* {cards.map((card, index) => (
         <EventCard key={index} image={card.image} title={card.title} />
-      ))}
-  
+      ))} */}
+  <span className="text-gray-300 text-xl text-center">Coming soon ...</span>
         </div>
         </section>
         <section className="flex flex-col justify-center items-start gap-6">
-        <h3 className="text-lime-400 text-4xl font-semibold ">A  Community of Vibrant AI/ML Engineers<br/>
+        <h3 className="text-lime-400 text-2xl md:text-4xl font-semibold ">A  Community of Vibrant AI/ML Engineers<br/>
           <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
           </h3>
-          <p className="text-white  text-3xl font-light">
+          <p className="text-white  text-xl md:text-3xl font-light">
           We believe in the power of community. Whether it’s troubleshooting a technical issue, brainstorming project ideas, or finding the right career path, Headstarter is here to support you every step of the way
           </p>
           <button className="bg-white text-black px-6 py-3 rounded-full">
       Join the commuity
     </button>
           </section>
-          <section className="flex flex-col justify-center items-center gap-4 ">
-          <h3 className="text-lime-400 text-4xl font-semibold text-center ">Meet The Team<br/>
+          <section className="flex flex-col justify-center items-center gap-4 " id="team">
+          <h3 className="text-lime-400 text-2xl md:text-4xl font-semibold text-center ">Meet The Team<br/>
           <span className="text-gray-400 text-center"> {`{ Empowering Ghana’s AI community }`}</span>
           </h3>
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
@@ -203,13 +208,41 @@ export default function Home() {
 </div>
        
           </section>
-          <section className="flex flex-col justify-center items-center gap-10">
+          <section className="flex flex-col justify-center items-center gap-10" id="partner">
           <h3 className="text-lime-400 text-3xl font-md  text-center">Let's Build Something Great Together <br/>
           <span className="text-gray-400"> {`{ Partner with Us to Create Impactful Solutions }`}</span>
         </h3>
 
         <PartnershipForm/>
           </section>
+          
+          <footer className="w-full rounded-lg bg-gray-600/30 text-white py-6">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="w-full md:w-1/2">
+          <h3 className="text-lime-400 text-2xl font-semibold mb-4">Stay Connected</h3>
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
+            <span className="text-gray-300 hover:text-lime-500">
+              <Link href="mailto:selasisepenu5@gmail.com">{`{Email}`}</Link>
+            </span>
+            <span className="text-gray-300 hover:text-lime-500">
+              <Link href="https://www.linkedin.com/in/selasie5">{`{LinkedIn}`}</Link>
+            </span>
+            <span className="text-gray-300 hover:text-lime-500">
+              <Link href="https://www.instagram.com/selasie5">{`{Instagram}`}</Link>
+            </span>
+            <span className="text-gray-300 hover:text-lime-500">
+              <Link href="https://twitter.com/selasie5">{`{Twitter}`}</Link>
+            </span>
+          </div>
+        </div>
+
+        <div className="w-full md:w-1/2 text-center md:text-right">
+          <h3 className="text-lime-400 text-lg font-semibold">
+            &copy; {currentYear} Headstarter Ghana. All rights reserved.
+          </h3>
+        </div>
+      </div>
+    </footer>
   </main>
   );
 }
