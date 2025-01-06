@@ -10,7 +10,7 @@ const TeamCard = ({ name, role, imageUrl, linkedinUrl }:
   }
 ) => {
   return (
-    <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-lime-500">
+    <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-main">
       {/* Image Section */}
       <div className="relative">
         <Image 
@@ -24,7 +24,7 @@ const TeamCard = ({ name, role, imageUrl, linkedinUrl }:
           href={linkedinUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="absolute bottom-2 right-2 bg-lime-500  p-2 rounded-full shadow-md"
+          className="absolute bottom-2 right-2 bg-main  p-2 rounded-full shadow-md"
         >
           <FaLinkedin className="text-black text-2xl" />
         </a>

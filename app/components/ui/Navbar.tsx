@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-lime-500 p-4">
+    <nav className="bg-main p-4">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" className="text-white text-2xl font-bold">
@@ -31,8 +31,10 @@ const Navbar = () => {
         {/* Join Your Chapter CTA */}
         <div className="hidden md:block ml-8">
         <button 
-          className="bg-white text-black px-6 py-3 rounded-full" >
-          Join Your Chapter
+          className="bg-white text-black px-6 py-3 rounded-full">
+            <Link href="https://tally.so/r/mVvZ0a">
+              Join Your Chapter
+            </Link>
         </button>
         </div>
 

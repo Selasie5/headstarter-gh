@@ -51,7 +51,7 @@ export default function Home() {
       whileHover={{ scale: 1.05 }}
     >
       <h1 className="text-center text-white text-3xl md:text-5xl leading-normal font-bold">
-        Empowering <span className="text-lime-400">AI/ML </span> Innovators Through Collaboration <span className="text-lime-400"> & </span>Community
+        Empowering <span className="text-main">AI/ML </span> Innovators Through Collaboration <span className="text-main"> & </span>Community
       </h1>
       <p className="text-md text-white text-center w-4/5">
         Join a forward-thinking community dedicated to fostering innovation, creating opportunities, and helping individuals break into AI/ML engineering.
@@ -62,10 +62,13 @@ export default function Home() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
+          <Link href="https://tally.so/r/mVvZ0a"y>
           Join the community
+          </Link>
+          
         </motion.button>
         <motion.button 
-          className="bg-lime-400 text-white px-4 py-2 rounded-full"
+          className="bg-main text-white px-4 py-2 rounded-full"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -75,7 +78,7 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center mt-24">
  <div className="">
         <h3 className="text-gray-300 text-2xl font-semibold">
-       <span className="text-lime-400">100 + members </span>  {`{Our Chapters Across The Nation}` } 
+       <span className="text-main">100 + members </span>  {`{Our Chapters Across The Nation}` } 
         </h3>
       </div>
       <LogoCarousel/>
@@ -98,15 +101,15 @@ export default function Home() {
         </p>
         <ul className="flex flex-col gap-2">
           <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
-            ✅ <span className="font-semibold text-lg text-lime-400"> Collaboration </span>
+            ✅ <span className="font-semibold text-lg text-main"> Collaboration </span>
             {`{ Building AI/ML solutions as a community }`}
           </motion.li>
           <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
-            ✅ <span className="font-semibold text-lg text-lime-400"> Inclusivity </span>
+            ✅ <span className="font-semibold text-lg text-main"> Inclusivity </span>
             {`{ A welcoming space for all skill levels }`}
           </motion.li>
           <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
-            ✅ <span className="font-semibold text-lg text-lime-400"> Growth </span>
+            ✅ <span className="font-semibold text-lg text-main"> Growth </span>
             {`{ Supporting personal and professional development }`}
           </motion.li>
         </ul>
@@ -125,7 +128,7 @@ export default function Home() {
       whileHover={{ scale: 1.03 }}
       id="benefits"
     >
-      <h3 className="text-lime-400 text-3xl font-md text-center">
+      <h3 className="text-main text-3xl font-md text-center">
         Fuel Your AI/ML Engineering Journey <br />
         <span className="text-gray-400"> {`{ Community Support, Learning, and Opportunities }`}</span>
       </h3>
@@ -152,7 +155,7 @@ export default function Home() {
                 key={opportunity.id}
                 className={`w-full text-left p-4 rounded-lg border ${
                   activeTab.id === opportunity.id
-                    ? "bg-lime-400 border-lime-500 text-white"
+                    ? "bg-main border-lime-500 text-white"
                     : "bg-gray-800 border-gray-700 text-gray-300"
                 }`}
                 onClick={() => setActiveTab(opportunity)}
@@ -175,7 +178,7 @@ export default function Home() {
       </div>
     </section>
     <section className="flex flex-col justify-center items-center gap-10" id="events">
-        <h3 className="text-lime-400 text-3xl font-md  text-center">Events & Workshops <br/>
+        <h3 className="text-main text-3xl font-md  text-center">Events & Workshops <br/>
           <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
         </h3>
        
@@ -187,7 +190,7 @@ export default function Home() {
         </div>
         </section>
         <section className="flex flex-col justify-center items-start gap-6">
-        <h3 className="text-lime-400 text-2xl md:text-4xl font-semibold ">A  Community of Vibrant AI/ML Engineers<br/>
+        <h3 className="text-main text-2xl md:text-4xl font-semibold ">A  Community of Vibrant AI/ML Engineers<br/>
           <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
           </h3>
           <p className="text-white  text-xl md:text-3xl font-light">
@@ -198,7 +201,7 @@ export default function Home() {
     </button>
           </section>
           <section className="flex flex-col justify-center items-center gap-4 " id="team">
-          <h3 className="text-lime-400 text-2xl md:text-4xl font-semibold text-center ">Meet The Team<br/>
+          <h3 className="text-main text-2xl md:text-4xl font-semibold text-center ">Meet The Team<br/>
           <span className="text-gray-400 text-center"> {`{ Empowering Ghana’s AI community }`}</span>
           </h3>
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
@@ -209,7 +212,7 @@ export default function Home() {
        
           </section>
           <section className="flex flex-col justify-center items-center gap-10" id="partner">
-          <h3 className="text-lime-400 text-3xl font-md  text-center">Let&apos;s Build Something Great Together <br/>
+          <h3 className="text-main text-3xl font-md  text-center">Let&apos;s Build Something Great Together <br/>
           <span className="text-gray-400"> {`{ Partner with Us to Create Impactful Solutions }`}</span>
         </h3>
 
@@ -219,25 +222,25 @@ export default function Home() {
           <footer className="w-full rounded-lg bg-gray-600/30 text-white py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="w-full md:w-1/2">
-          <h3 className="text-lime-400 text-2xl font-semibold mb-4">Stay Connected</h3>
+          <h3 className="text-main text-2xl font-semibold mb-4">Stay Connected</h3>
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
-            <span className="text-gray-300 hover:text-lime-500">
+            <span className="text-gray-300 hover:text-main">
               <Link href="mailto:selasisepenu5@gmail.com">{`{Email}`}</Link>
             </span>
-            <span className="text-gray-300 hover:text-lime-500">
+            <span className="text-gray-300 hover:text-main">
               <Link href="https://www.linkedin.com/in/selasie5">{`{LinkedIn}`}</Link>
             </span>
-            <span className="text-gray-300 hover:text-lime-500">
+            <span className="text-gray-300 hover:text-main">
               <Link href="https://www.instagram.com/selasie5">{`{Instagram}`}</Link>
             </span>
-            <span className="text-gray-300 hover:text-lime-500">
+            <span className="text-gray-300 hover:text-main">
               <Link href="https://twitter.com/selasie5">{`{Twitter}`}</Link>
             </span>
           </div>
         </div>
 
         <div className="w-full md:w-1/2 text-center md:text-right">
-          <h3 className="text-lime-400 text-lg font-semibold">
+          <h3 className="text-main text-lg font-semibold">
             &copy; {currentYear} Headstarter Ghana. All rights reserved.
           </h3>
         </div>
