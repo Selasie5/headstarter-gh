@@ -1,7 +1,7 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,12 +10,16 @@ const Navbar = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className="bg-main p-4">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" className="text-white text-2xl font-bold">
-          headstarter_gh
+          <Image src="/headstarter.png" alt="Headstarter" width={150} height={80} />
         </Link>
 
         {/* Desktop Menu */}
@@ -60,7 +64,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button onClick={toggleMobileMenu} className="md:hidden text-white">
+        <button onClick={toggleMobileMenu} className="md:hidden text-white" title="Menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -85,42 +89,49 @@ const Navbar = () => {
         <Link
           href="#home"
           className="block text-white py-2 px-4 hover:bg-blue-600"
+          onClick={closeMobileMenu}
         >
           Home
         </Link>
         <Link
           href="#about"
           className="block text-white py-2 px-4 hover:bg-blue-600"
+          onClick={closeMobileMenu}
         >
           About
         </Link>
         <Link
           href="#team"
           className="block text-white py-2 px-4 hover:bg-blue-600"
+          onClick={closeMobileMenu}
         >
           Team
         </Link>
         <Link
           href="#services"
           className="block text-white py-2 px-4 hover:bg-blue-600"
+          onClick={closeMobileMenu}
         >
           Benefits
         </Link>
         <Link
           href="#events"
           className="block text-white py-2 px-4 hover:bg-blue-600"
+          onClick={closeMobileMenu}
         >
           Events
         </Link>
         <Link
           href="#contact"
           className="block text-white py-2 px-4 hover:bg-blue-600"
+          onClick={closeMobileMenu}
         >
           Partner With Us
         </Link>
         <Link
           href="#join"
           className="block  mt-4 bg-white text-black px-6 py-3 rounded-full"
+          onClick={closeMobileMenu}
         >
           Join Your Chapter
         </Link>

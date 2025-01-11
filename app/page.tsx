@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./components/ui/Card";
-import EventCard from "./components/ui/EventCard";
 import LogoCarousel from "./components/ui/LogoCarousel";
 import PartnershipForm from "./components/ui/PartnershipForm";
 import TeamCard from "./components/ui/TeamCard";
@@ -35,13 +34,6 @@ export default function Home() {
     },
   ];
   const [activeTab, setActiveTab] = useState(opportunities[0]);
-
-  const cards = [
-    { image: "/hackathons.jpg", title: "Hackathons" },
-    { image: "/bootcamp.jpg", title: "AI Bootcamps" },
-    { image: "/career-fair.jpg", title: "Career Fairs" },
-    { image: "/hackathon.jpg", title: "Workshops" },
-  ];
 
   return (
     <main className="p-4 mt-10 md:mt-0 md:px-24 flex flex-col justify-center items-center gap-48">
@@ -293,7 +285,7 @@ export default function Home() {
           {/* {cards.map((card, index) => (
         <EventCard key={index} image={card.image} title={card.title} />
       ))} */}
-          <span className="text-gray-300 text-xl text-center">
+          <span className="text-gray-300 text-center text-xl font-semibold">
             Coming soon ...
           </span>
         </div>
@@ -310,7 +302,7 @@ export default function Home() {
           career path, Headstarter is here to support you every step of the way
         </p>
         <button className="bg-white text-black px-6 py-3 rounded-full">
-          Join the commuity
+          <Link href="https://tally.so/r/m6AAKJ">Join the commuity</Link>
         </button>
       </section>
       <section

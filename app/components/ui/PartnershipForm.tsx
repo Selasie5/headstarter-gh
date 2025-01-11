@@ -15,12 +15,12 @@ const PartnershipForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError("");
@@ -47,9 +47,9 @@ const PartnershipForm = () => {
         website: "",
         message: "",
       });
-    } catch (error: any) {
+    } catch (error: unknown) {
       setError(
-        error.message || "Something went wrong. Please try again later.",
+        (error as Error).message || "Something went wrong. Please try again later.",
       );
     } finally {
       setIsSubmitting(false);
@@ -149,7 +149,7 @@ const PartnershipForm = () => {
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows={4}
               value={formData.message}
               onChange={handleChange}
               required
