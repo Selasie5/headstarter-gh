@@ -153,7 +153,7 @@ export default function Home() {
           </span>
         </h3>
         <div className="flex flex-col md:flex-row gap-10">
-          <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
+          <div className="border border-teal-300 w-60 rounded-lg shadow-lg p-6 text-white">
             <h3 className="text-lg font-semibold mb-2">
               Collaborative Projects
             </h3>
@@ -162,21 +162,21 @@ export default function Home() {
               solutions as a community
             </p>
           </div>
-          <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
+          <div className="border border-teal-300 w-60 rounded-lg shadow-lg p-6 text-white">
             <h3 className="text-lg font-semibold mb-2">Incubation</h3>
             <p className="text-gray-600">
               Nurturing AI/ML Startups with mentorships, resources, and
               innovative ideas
             </p>
           </div>
-          <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
+          <div className="border border-teal-300 w-60 rounded-lg shadow-lg p-6 text-white">
             <h3 className="text-lg font-semibold mb-2">Career Support</h3>
             <p className="text-gray-600">
               Comprehensive career support for AI/ML engineers to build resumes,
               get better with technical interviews and land their dream jobs
             </p>
           </div>
-          <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
+          <div className="border border-teal-300 w-60 rounded-lg shadow-lg p-6 text-white">
             <h3 className="text-lg font-semibold mb-2">
               Networking Opportunities
             </h3>
