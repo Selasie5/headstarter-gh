@@ -106,33 +106,22 @@ export default function Home() {
               ✅{" "}
               <span className="font-semibold text-lg text-main">
                 {" "}
-                Collaboration Projects{" "}
+                Collaboration{" "}
               </span>
-              {` Building AI/ML projects driving innovation and real world solutions as a community `}
+              {`{ Building AI/ML solutions as a community }`}
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
               ✅{" "}
               <span className="font-semibold text-lg text-main">
                 {" "}
-                Incubation{" "}
+                Inclusivity{" "}
               </span>
-              {` Nurturing AI/ML Startups with mentorships, resources, and innovative ideas`}
+              {`{ A welcoming space for all skill levels }`}
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
               ✅{" "}
-              <span className="font-semibold text-lg text-main">
-                {" "}
-                Career Support{" "}
-              </span>
-              {`Comprehensive career support for AI/ML engineers to build resumes, get better with technical interviews and land their dream jobs`}
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
-              ✅{" "}
-              <span className="font-semibold text-lg text-main">
-                {" "}
-                Networking Oppurtunities{" "}
-              </span>
-              {`Networking opportunities with industry professionals, AI/ML engineers, and like-minded individuals`}
+              <span className="font-semibold text-lg text-main"> Growth </span>
+              {`{ Supporting personal and professional development }`}
             </motion.li>
           </ul>
         </div>
