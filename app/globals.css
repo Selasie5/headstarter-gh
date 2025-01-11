@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-family: "Space Grotesk", sans-serif;
   background-color: #121212;
 }
-.font-SpaceGrotesk{
+.font-SpaceGrotesk {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -76,4 +76,3 @@ body{
     @apply bg-background text-foreground;
   }
 }
-

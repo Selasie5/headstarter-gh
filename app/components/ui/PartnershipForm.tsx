@@ -48,7 +48,9 @@ const PartnershipForm = () => {
         message: "",
       });
     } catch (error: any) {
-      setError(error.message || "Something went wrong. Please try again later.");
+      setError(
+        error.message || "Something went wrong. Please try again later.",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -66,10 +68,15 @@ const PartnershipForm = () => {
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
-            <div className="text-center text-red-600 font-semibold">{error}</div>
+            <div className="text-center text-red-600 font-semibold">
+              {error}
+            </div>
           )}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
               Full Name
             </label>
             <input
@@ -83,7 +90,10 @@ const PartnershipForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email Address
             </label>
             <input
@@ -97,7 +107,10 @@ const PartnershipForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="company"
+              className="block text-sm font-medium text-gray-700"
+            >
               Company Name
             </label>
             <input
@@ -111,7 +124,10 @@ const PartnershipForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="website" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="website"
+              className="block text-sm font-medium text-gray-700"
+            >
               Website (optional)
             </label>
             <input
@@ -124,7 +140,10 @@ const PartnershipForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700"
+            >
               Message
             </label>
             <textarea
@@ -140,7 +159,9 @@ const PartnershipForm = () => {
           <button
             type="submit"
             className={`w-full text-white py-2 px-4 rounded-md focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
-              isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-main hover:bg-lime-700"
+              isSubmitting
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-main hover:bg-lime-700"
             }`}
             disabled={isSubmitting}
           >
