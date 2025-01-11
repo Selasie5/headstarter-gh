@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Card from "./components/ui/Card";
 import LogoCarousel from "./components/ui/LogoCarousel";
 import PartnershipForm from "./components/ui/PartnershipForm";
 import TeamCard from "./components/ui/TeamCard";
