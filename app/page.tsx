@@ -68,7 +68,7 @@ export default function Home() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="https://tally.so/r/mVvZ0a">Join the community</Link>
+            <Link href="https://tally.so/r/m6AAKJ">Join the community</Link>
           </motion.button>
           <motion.button
             className="bg-main text-white px-4 py-2 rounded-full"
@@ -81,8 +81,8 @@ export default function Home() {
         <section className="flex flex-col justify-center items-center mt-24">
           <div className="">
             <h3 className="text-gray-300 text-2xl font-semibold">
-              <span className="text-main">100 + members </span>{" "}
-              {`{Our Chapters Across The Nation}`}
+              <span className="text-main">400+ members </span>{" "}
+              {`Our Chapters Across The Nation`}
             </h3>
           </div>
           <LogoCarousel />
@@ -117,7 +117,7 @@ export default function Home() {
                 {" "}
                 Collaboration{" "}
               </span>
-              {`{ Building AI/ML solutions as a community }`}
+              {` Building AI/ML solutions as a community `}
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
               ✅{" "}
@@ -125,12 +125,12 @@ export default function Home() {
                 {" "}
                 Inclusivity{" "}
               </span>
-              {`{ A welcoming space for all skill levels }`}
+              {` A welcoming space for all skill levels`}
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
               ✅{" "}
               <span className="font-semibold text-lg text-main"> Growth </span>
-              {`{ Supporting personal and professional development }`}
+              {`Supporting personal and professional development`}
             </motion.li>
           </ul>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
           Fuel Your AI/ML Engineering Journey <br />
           <span className="text-gray-400">
             {" "}
-            {`{ Community Support, Learning, and Opportunities }`}
+            {`Community Support, Learning, and Opportunities`}
           </span>
         </h3>
         <div className="flex flex-col md:flex-row gap-10">
@@ -286,7 +286,7 @@ export default function Home() {
       >
         <h3 className="text-main text-3xl font-md  text-center">
           Events & Workshops <br />
-          <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
+          <span className="text-gray-400"> {`Learn, Share and Grow`}</span>
         </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
@@ -302,7 +302,7 @@ export default function Home() {
         <h3 className="text-main text-2xl md:text-4xl font-semibold ">
           A Community of Vibrant AI/ML Engineers
           <br />
-          <span className="text-gray-400"> {`{ Learn, Share and Grow }`}</span>
+          <span className="text-gray-400"> {`Learn, Share and Grow`}</span>
         </h3>
         <p className="text-white  text-xl md:text-3xl font-light">
           We believe in the power of community. Whether it’s troubleshooting a
@@ -322,27 +322,27 @@ export default function Home() {
           <br />
           <span className="text-gray-400 text-center">
             {" "}
-            {`{ Empowering Ghana’s AI community }`}
+            {`Empowering Ghana’s AI community`}
           </span>
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 py-8">
           <TeamCard
             name="Gifty Asamoah"
             role="Organizer"
-            imageUrl="/profile1.jpg"
-            linkedinUrl=""
+            imageUrl="/gifty.png"
+            linkedinUrl="https://www.linkedin.com/in/gifty-asamoah-344172a7/"
           />
           <TeamCard
             name="Selasie Sepenu"
-            role="Co-Organizer & UG Chapter Lead"
+            role="Co-Organizer"
             imageUrl="/profile2.jpg"
-            linkedinUrl=""
+            linkedinUrl="https://www.linkedin.com/in/selasiekofisepenu/"
           />
           <TeamCard
-            name="Peter Essibul"
-            role="UCC Chapter Lead"
-            imageUrl="/profile1.jpg"
-            linkedinUrl=""
+            name="Peter Essibu"
+            role="Operations Manager"
+            imageUrl="/pkessibu.png"
+            linkedinUrl="https://www.linkedin.com/in/peteressibu"
           />
         </div>
       </section>
@@ -354,7 +354,7 @@ export default function Home() {
           Let&apos;s Build Something Great Together <br />
           <span className="text-gray-400">
             {" "}
-            {`{ Partner with Us to Create Impactful Solutions }`}
+            {`Partner with Us to Create Impactful Solutions`}
           </span>
         </h3>
 
@@ -369,16 +369,16 @@ export default function Home() {
             </h3>
             <div className="flex flex-wrap justify-center md:justify-start items-center gap-6">
               <span className="text-gray-300 hover:text-main">
-                <Link href="mailto:selasisepenu5@gmail.com">{`{Email}`}</Link>
+                <Link href="mailto:selasisepenu5@gmail.com">{`Email`}</Link>
               </span>
               <span className="text-gray-300 hover:text-main">
-                <Link href="https://www.linkedin.com/in/selasie5">{`{LinkedIn}`}</Link>
+                <Link href="https://www.linkedin.com/in/selasie5">{`LinkedIn`}</Link>
               </span>
               <span className="text-gray-300 hover:text-main">
-                <Link href="https://www.instagram.com/selasie5">{`{Instagram}`}</Link>
+                <Link href="https://www.instagram.com/selasie5">{`Instagram`}</Link>
               </span>
               <span className="text-gray-300 hover:text-main">
-                <Link href="https://twitter.com/selasie5">{`{Twitter}`}</Link>
+                <Link href="https://twitter.com/selasie5">{`Twitter`}</Link>
               </span>
             </div>
           </div>

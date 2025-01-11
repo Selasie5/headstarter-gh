@@ -7,7 +7,7 @@ const EventCard = ({ image, title }: { image: string; title: string }) => {
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-        <h2 className="text-white text-xl md:text-2xl font-semibold">
+        <h2 className="text-white text-lg md:text-2xl font-semibold">
           {title}
         </h2>
       </div>

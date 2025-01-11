@@ -55,7 +55,7 @@ const Navbar = () => {
         {/* Join Your Chapter CTA */}
         <div className="hidden md:block ml-8">
           <button className="bg-white text-black px-6 py-3 rounded-full">
-            <Link href="https://tally.so/r/mVvZ0a">Join Your Chapter</Link>
+            <Link href="https://tally.so/r/m6AAKJ">Join Your Chapter</Link>
           </button>
         </div>
 
