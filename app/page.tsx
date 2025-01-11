@@ -106,7 +106,7 @@ export default function Home() {
               ✅{" "}
               <span className="font-semibold text-lg text-main">
                 {" "}
-                Collaboration Projets{" "}
+                Collaboration Projects{" "}
               </span>
               {` Building AI/ML projects driving innovation and real world solutions as a community `}
             </motion.li>
@@ -169,22 +169,22 @@ export default function Home() {
               Collaborative Projects
             </h3>
             <p className="text-gray-600">
-              Access resources, courses, and workshops to build your AI/ML
-              skills.
+              Building AI/ML projects driving innovation and real world
+              solutions as a community
             </p>
           </div>
           <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
-            <h3 className="text-lg font-semibold mb-2">Learning Resources</h3>
+            <h3 className="text-lg font-semibold mb-2">Incubation</h3>
             <p className="text-gray-600">
-              Access resources, courses, and workshops to build your AI/ML
-              skills.
+              Nurturing AI/ML Startups with mentorships, resources, and
+              innovative ideas
             </p>
           </div>
           <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
             <h3 className="text-lg font-semibold mb-2">Career Support</h3>
             <p className="text-gray-600">
-              Access resources, courses, and workshops to build your AI/ML
-              skills.
+              Comprehensive career support for AI/ML engineers to build resumes,
+              get better with technical interviews and land their dream jobs
             </p>
           </div>
           <div className="border border-teal-300 rounded-lg shadow-lg p-6 text-white">
@@ -192,8 +192,8 @@ export default function Home() {
               Networking Opportunities
             </h3>
             <p className="text-gray-600">
-              Access resources, courses, and workshops to build your AI/ML
-              skills.
+              Networking opportunities with industry professionals, AI/ML
+              engineers, and like-minded individuals
             </p>
           </div>
         </div>
