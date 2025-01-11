@@ -108,7 +108,7 @@ export default function Home() {
                 {" "}
                 Collaboration{" "}
               </span>
-              {`{ Building AI/ML solutions as a community }`}
+              {`Building AI/ML solutions as a community`}
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
               ✅{" "}
@@ -116,12 +116,12 @@ export default function Home() {
                 {" "}
                 Inclusivity{" "}
               </span>
-              {`{ A welcoming space for all skill levels }`}
+              {`A welcoming space for all skill levels`}
             </motion.li>
             <motion.li whileHover={{ scale: 1.05 }} className="text-gray-400">
               ✅{" "}
               <span className="font-semibold text-lg text-main"> Growth </span>
-              {`{ Supporting personal and professional development }`}
+              {`Supporting personal and professional development`}
             </motion.li>
           </ul>
         </div>
