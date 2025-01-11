@@ -18,7 +18,7 @@ const images = [
 
   return (
     <div className="relative overflow-hidden  py-6">
-      <div className="flex w-full animate-scroll gap-8">
+      <div className="w-full animate-scroll gap-8 grid grid-cols-4">
         {/* Duplicate the logos to create an infinite scrolling effect */}
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0">
