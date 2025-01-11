@@ -161,7 +161,7 @@ const PartnershipForm = () => {
             className={`w-full text-white py-2 px-4 rounded-md focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
               isSubmitting
                 ? "bg-gray-400 cursor-not-allowed"
-                : "bg-main hover:bg-lime-700"
+                : "bg-indigo-600 hover:bg-indigo-700"
             }`}
             disabled={isSubmitting}
           >

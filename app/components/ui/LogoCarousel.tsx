@@ -4,22 +4,27 @@ import React from "react";
 import Image from "next/image";
 
 const LogoCarousel = () => {
-  const logos = [
-    { id: 1, src: "/logo1.png", alt: "Logo 1" },
-    { id: 2, src: "/logo2.png", alt: "Logo 2" },
-    { id: 3, src: "/logo3.png", alt: "Logo 3" },
-    { id: 4, src: "/logo4.png", alt: "Logo 4" },
-  ];
+  
+const images = [
+  "/schools/A-C.png",
+  "/schools/UCC.png",
+  "/schools/A-I-T.png",
+  "/schools/AshesiUniversity.png",
+  "/schools/GCTU.png",
+  "/schools/KNUST.png",
+  "/schools/UENR.png",
+  "/schools/UG.png",
+];
 
   return (
     <div className="relative overflow-hidden  py-6">
       <div className="flex w-full animate-scroll gap-8">
         {/* Duplicate the logos to create an infinite scrolling effect */}
-        {logos.map((logo, index) => (
+        {images.map((image, index) => (
           <div key={index} className="flex-shrink-0">
             <Image
-              src={logo.src}
-              alt={logo.alt}
+              src={image}
+              alt={`Logo ${index + 1}`}
               width={100}
               height={100}
               className="w-auto h-20 object-contain"
